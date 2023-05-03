@@ -47,7 +47,7 @@ export const payment=async(req,res)=>{
             Payment_id:razorpay_payment_id,
             Order_id:razorpay_order_id
           },{merge:true});
-       res.redirect(`${process.env.BASE_URL}/success?payment=${razorpay_payment_id}&order=${razorpay_order_id}`);
+       res.redirect(`https://fluxfashion.netlify.app/success?payment=${razorpay_payment_id}&order=${razorpay_order_id}`);
    }
    else
    {
